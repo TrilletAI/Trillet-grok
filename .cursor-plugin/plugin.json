@@ -1,0 +1,34 @@
+{
+  "name": "trillet",
+  "displayName": "Trillet",
+  "version": "0.1.0",
+  "description": "Connect Trillet voice AI so Grok Bot / Cursor can claim numbers, spin up agents, and place outbound calls from chat.",
+  "author": {
+    "name": "Trillet AI",
+    "email": "support@trillet.ai"
+  },
+  "homepage": "https://trillet.ai",
+  "repository": "https://github.com/TrilletAI/Trillet-grok",
+  "license": "MIT",
+  "keywords": ["trillet", "voice", "phone", "mcp", "outbound", "grok"],
+  "logo": "assets/logo.png",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "TRILLET_API_KEY": {
+        "type": "string",
+        "title": "API key",
+        "description": "Secret Trillet API key from Trillet Studio: Settings → Workspace → Developer → API Keys (https://app.trillet.ai). Cursor stores the value. Do not commit it.",
+        "minLength": 1
+      },
+      "TRILLET_WORKSPACE_ID": {
+        "type": "string",
+        "title": "Workspace ID",
+        "description": "Default workspace id: 24-character hex from the Trillet Studio URL or workspace settings.",
+        "minLength": 24,
+        "maxLength": 24
+      }
+    },
+    "required": ["TRILLET_API_KEY", "TRILLET_WORKSPACE_ID"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "trillet": {
+      "command": "npx",
+      "args": ["-y", "@trillet-ai/mcp@latest"],
+      "env": {
+        "TRILLET_API_KEY": "${TRILLET_API_KEY}",
+        "TRILLET_WORKSPACE_ID": "${TRILLET_WORKSPACE_ID}"
+      }
+    }
+  }
+}
